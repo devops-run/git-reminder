@@ -13,6 +13,7 @@ $ git init
 $ git init <directory>
 
 Создание репозитория Git для совместной работы
+  
 $ git init --bare --share sharedproject.git
 
 Данная команда создает каталог с именем sharedproject.git c правами на запись в него. Подробнее тут.
@@ -20,39 +21,44 @@ $ git init --bare --share sharedproject.git
 Клонирование удаленного репозитория в локальный
 
 Клонирование удаленного репозитория в локальный каталог с именем по умолчанию
+  
 $ git clone https://github.com/n0tb0dy/RemoreBranches.git
 
   
 Клонирование удаленного репозитория в локальный каталог с указанным именем
+  
 $ git clone https://github.com/n0tb0dy/RemoreBranches.git LocalBranches
 
   
 Клонирование локального репозитория на удаленный
-
   
 Если у вас уже есть локальный репозиторий Git и вы хотите его выложить в общий доступ, то сперва вам надо создать удаленный репозиторий (например на GitHub), а затем дать команды представленные ниже, изменив соотвественно часть с названием вашего репозитория.
 
 1. Связываем локальный репозиторий с удаленным
+  
 $ git remote add origin https://github.com/n0tb0dy/UpRemote.git
 
 2. Верифицируем что удаленный репозиторий связан с нашим
+  
 $ git remote -v
   
 
 3. Публикуем ветку master на удаленном репозитории
-$ git push -u origin master
-
   
-Более подробно можно почитать тут.
+$ git push -u origin master
 
 Задаем имя пользователя и электронную почту
 
 Глобально для всех проектов текущего пользователья
+  
 $ git config --global user.name «John Doe»
+  
 $ git config --global user.email johndoe@example.com
 
 Для конкретного проекта (эти настройки переопределят глобальные)
+
 $ git config --local user.name «John Doe»
+  
 $ git config --local user.email johndoe@example.com
 
 Просмотр настроек Git
