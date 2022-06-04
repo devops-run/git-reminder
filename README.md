@@ -272,6 +272,7 @@ $ git remote add origin https://github.com/n0tb0dy/UpRemote.git
 $ git remote add tr https://github.com/n0tb0dy/UpRemote.git
 
 Получение изменений с удаленного репозитория под именем tr в локальную ветку tr
+  
 $ git fetch tr
 
 Отправка данных на удаленный репозиторий. Формат git push [удал. сервер] [локальная ветка]
